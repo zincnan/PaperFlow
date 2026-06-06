@@ -16,6 +16,17 @@
 现有方案：在 Hermes agent 协助下复现实验
 **独立使用**：基于论文提供的代码或说明，复现其核心实验并验证结果
 ### 步骤 5：论文撰写
-预设方案：搭建一套 LaTeX 写作工具链
-写作方案：VS Code + Linux 环境 + TeX Live + LaTeX Workshop + latexmk + Zotero/Better BibTeX + Git
+现有方案：LaTeX 写作工具链,TeX Live + LaTeX Workshop + latexmk,vscode 需 tlmgr path add 链接 TeX Live Manager 路径
 **独立使用**：从零开始撰写 LaTeX 论文，集成文献引用与版本管理
+
+
+## 环境
+
+### 基础环境
+
+本工作流**推荐**在以下环境中运行：
+
+| 项目 | 推荐配置 |
+| --- | --- |
+| 操作系统 | **Linux**（Ubuntu 22.04+） |
+| 编辑器 | **VS Code** |

@@ -1,0 +1,122 @@
+# =========================================================
+# PaperFlow 科研工作流 .gitignore
+# 覆盖 5 个步骤中会产生的临时文件 / 编译产物 / 大体积素材
+# =========================================================
+
+# ---------- 1. LaTeX 编译产物（步骤 5：论文撰写） ----------
+# TeX Live + latexmk 编译过程产物，可由 .tex 重新生成
+*.aux
+*.log
+*.toc
+*.out
+*.bbl
+*.bcf
+*.blg
+*.run.xml
+*.fdb_latexmk
+*.fls
+*.xdv
+*.synctex.gz
+*.nav
+*.snm
+*.vrb
+*.idx
+*.ind
+*.ilg
+*.glo
+*.gls
+*.glg
+*.ist
+*.acn
+*.acr
+*.alg
+*.lof
+*.lot
+*.lol
+*.loa
+*.listing
+*.maf
+*.mtc
+*.mtc0
+*.mlf
+*.mlt
+*.ptc
+*.upc
+missfont.log
+
+# 忽略 PDF：修改下面这行注释
+*.pdf
+
+# ---------- 2. Zotero 文献库（步骤 3：论文管理和阅读） ----------
+# Zotero 默认把数据库放在 ~/Zotero，本项目里只在「科研工作流/文献」出现时再针对性忽略
+# 常见文件
+*.bib.bak
+zotero.sqlite
+zotero.sqlite-journal
+storage/
+
+# ---------- 3. 论文 PDF / 抓取缓存（步骤 1：论文检索） ----------
+# 已下载的 PDF 通常不入库（体积大、且有版权问题）
+# 如果你想用 git 管理 PDF，把对应路径加入 !*.pdf 反白规则
+papers/**/*.pdf
+papers/**/*.PDF
+!papers/**/.gitkeep
+# arXiv / IEEE 等的下载缓存
+*.download
+
+# ---------- 4. 实验复现产物（步骤 4：论文实验复现） ----------
+# Python 缓存
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+# 虚拟环境
+venv/
+.venv/
+env/
+conda-env/
+# 分布式训练/大实验常见产物
+runs/
+experiments/**/checkpoints/
+experiments/**/logs/
+*.ckpt
+*.pth
+*.pt
+*.onnx
+*.h5
+*.hdf5
+*.npz
+*.npy
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# ---------- 5. 编辑器 / IDE ----------
+# VS Code（保留 .vscode/settings.json 团队共享，忽略个人缓存）
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+# 其它 IDE
+.idea/
+*.swp
+*.swo
+*~
+
+# ---------- 6. 操作系统 ----------
+.DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# ---------- 7. 其它临时文件 ----------
+*.tmp
+*.bak
+*.swp
+*.orig
+*.rej
+*.log
+# 抓图 / 截屏
+*.png.bak
+# 压缩包中的解压残留
+*.tar.gz.tmp
