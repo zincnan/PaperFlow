@@ -63,8 +63,10 @@ papers/**/*.PDF
 !papers/**/.gitkeep
 # arXiv / IEEE 等的下载缓存
 *.download
-# DBLP / 其他检索脚本输出的 JSONP 结果(可由脚本重新生成)
+# 检索数据
 *.jsonp
+PaperRetrieval/dblp/results_cleaned/
+PaperRetrieval/acm_dl/keywords/
 
 # ---------- 4. 实验复现产物（步骤 4：论文实验复现） ----------
 # Python 缓存
