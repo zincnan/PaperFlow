@@ -1,6 +1,7 @@
 network:
   # base_url: "https://dblp.org"
   base_url: "https://dblp.uni-trier.de"
+  # base_url: "https://dblp.dagstuhl.de"
   timeout: 30
   retries: 3
 
@@ -12,7 +13,7 @@ proxy:
   # url: "http://127.0.0.1:2080"
 
 search:
-  results_per_query: 200
+  results_per_query: 50
   year: "2026"
 
 output:
