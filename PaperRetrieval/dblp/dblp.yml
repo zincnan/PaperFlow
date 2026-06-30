@@ -1,0 +1,35 @@
+network:
+  # base_url: "https://dblp.org"
+  base_url: "https://dblp.uni-trier.de"
+  timeout: 30
+  retries: 3
+
+proxy:
+  enabled: true
+  # SSH 代理
+  url: "socks5h://127.0.0.1:2080"
+  # HTTP 代理
+  # url: "http://127.0.0.1:2080"
+
+search:
+  results_per_query: 200
+  year: "2026"
+
+output:
+  parent_dir: "./results"
+  jsonp_callback: "dblpSearchResults"
+  save_raw_results: true
+
+queries:
+  - "LLM agent behavior"
+  - "AI agent behavior governance"
+  - "LLM agent monitoring"
+  - "LLM agent auditing"
+  - "LLM agent diagnosis"
+  - "AI agent access control"
+  - "LLM agent access control"
+  - "AI agent policy enforcement"
+  - "LLM agent policy enforcement"
+  - "LLM agent runtime enforcement"
+  - "agent behavioral contract"
+  - "computer-use agent harmful behavior"
